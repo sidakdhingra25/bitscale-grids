@@ -514,10 +514,10 @@ export function DataGrid() {
       {/* Top Header */}
       <div className="flex items-center justify-between border-b bg-white px-2 sm:px-4 py-2 shrink-0 gap-2 overflow-x-auto [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         <div className="flex items-center gap-1 sm:gap-2 min-w-max">
-          <button className="p-1 hover:bg-gray-100 rounded shrink-0">
+          <button className="p-1 hover:bg-gray-100 rounded shrink-0 cursor-pointer">
             <Home size={16} className="text-gray-600" />
           </button>
-          <button className="p-1 hover:bg-gray-100 rounded shrink-0">
+          <button className="p-1 hover:bg-gray-100 rounded shrink-0 cursor-pointer">
             <Star size={16} fill="#facc15" className="text-yellow-400" />
           </button>
           <span className="text-xs sm:text-sm text-gray-600 truncate max-w-[120px] sm:max-w-none">
@@ -530,7 +530,7 @@ export function DataGrid() {
         </div>
 
         <div className="flex items-center gap-1 sm:gap-2 min-w-max">
-          <button>
+          <button className="cursor-pointer">
           <CloudCheck size={16} />
           </button>
           <div className="flex items-center gap-1 text-xs sm:text-sm bg-[#EDF3EC] text-[#438361] rounded-full px-2 py-1 shrink-0">
@@ -549,7 +549,7 @@ export function DataGrid() {
           <span className="text-sm">Payment failed. 450,000 credits will permanently expire in 30 days</span>
           <AlertCircle size={16} />
         </div>
-        <button className="rounded-md bg-white px-4 py-1 text-sm font-medium text-gray-800 hover:bg-gray-100">
+        <button className="rounded-md bg-white px-4 py-1 text-sm font-medium text-gray-800 hover:bg-gray-100 cursor-pointer">
           Pay Now
         </button>
       </div>
@@ -562,7 +562,7 @@ export function DataGrid() {
               <div className="relative">
                 <DropdownOnRelease
                   trigger={
-                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-white text-xs hover:bg-gray-50 whitespace-nowrap">
+                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-white text-xs hover:bg-gray-50 whitespace-nowrap cursor-pointer">
                       <Building2  className="h-3.5 w-3.5 text-teal-600" />
                       Load Data
                       <ChevronDown className="h-3 w-3 text-gray-500" />
@@ -586,7 +586,7 @@ export function DataGrid() {
 
               {/* 2000 Rows */}
               <div className="relative">
-                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded bg-gray-100 whitespace-nowrap">
+                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded bg-gray-100 whitespace-nowrap cursor-pointer">
                   <Sheet size={14} className="text-gray-400" />
                   2000 Rows
                 </button>
@@ -597,7 +597,7 @@ export function DataGrid() {
               {/* <div className="mx-2 h-4 w-px bg-gray-300 shrink-0"></div> */}
 
               {/* 16/20 Columns */}
-              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded bg-gray-100 whitespace-nowrap">
+              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded bg-gray-100 whitespace-nowrap cursor-pointer">
                 <Columns size={14} className="text-gray-400" />
                 16/20 Columns
               </button>
@@ -609,7 +609,7 @@ export function DataGrid() {
               <div className="relative">
                 <DropdownOnRelease
                   trigger={
-                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap">
+                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap cursor-pointer">
                       <ArrowUpDown size={14} className="text-gray-400" />
                       Sort by
                       <ChevronDown className="h-3 w-3 text-gray-500" />
@@ -636,7 +636,7 @@ export function DataGrid() {
               <div className="relative">
                 <DropdownOnRelease
                   trigger={
-                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap">
+                    <Button variant="outline" size="sm" className="relative h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap cursor-pointer">
                       <ListFilter size={14} className="text-gray-400"/>
                       Filter
                       <ChevronDown className="h-3 w-3 text-gray-500" />
@@ -662,7 +662,7 @@ export function DataGrid() {
               {/* Action button - light gray background */}
               <DropdownOnRelease
                 trigger={
-                  <Button variant="outline" size="sm" className="h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap">
+                  <Button variant="outline" size="sm" className="h-8 gap-1.5 bg-gray-100 text-xs hover:bg-gray-200 whitespace-nowrap cursor-pointer">
                     Action
                     <ChevronDown size={14} className="text-gray-400" />
                   </Button>
@@ -681,12 +681,12 @@ export function DataGrid() {
               <DropdownOnRelease
                 trigger={
                   <div className="flex items-center rounded-lg bg-slate-800 overflow-hidden">
-                    <Button variant="ghost" size="sm" className="h-8 gap-1.5 px-3 text-sm font-medium text-white whitespace-nowrap hover:bg-transparent hover:text-white">
+                    <Button variant="ghost" size="sm" className="h-8 gap-1.5 px-3 text-sm font-medium text-white whitespace-nowrap hover:bg-transparent hover:text-white cursor-pointer">
                       <Sparkles size={14} className="text-white" />
                       Enrichment
                     </Button>
                     <div className="w-px h-5 bg-slate-600"></div>
-                    <Button variant="ghost" size="sm" className="h-8 px-2 text-white hover:bg-transparent hover:text-white">
+                    <Button variant="ghost" size="sm" className="h-8 px-2 text-white hover:bg-transparent hover:text-white cursor-pointer">
                       <ChevronDown size={14} />
                     </Button>
                   </div>
@@ -702,7 +702,7 @@ export function DataGrid() {
               />
 
               {/* Gradient circular icon with sparkle */}
-              <button className="flex h-8 w-8 items-center justify-center rounded-full bg-linear-to-br from-purple-500 via-pink-500 to-orange-400 shadow-md shrink-0">
+              <button className="flex h-8 w-8 items-center justify-center rounded-full bg-linear-to-br from-purple-500 via-pink-500 to-orange-400 shadow-md shrink-0 cursor-pointer">
                 <Sparkles size={14} className="text-white" />
               </button>
             </div>
@@ -711,7 +711,7 @@ export function DataGrid() {
       </div>
 
       {/* Table Container */}
-      <div ref={gridRef} className="flex-1 w-full min-h-0 max-h-full overflow-auto">
+      <div ref={gridRef} className="flex-1 w-full min-h-0 max-h-full overflow-auto cursor-pointer">
         <DataEditor
           ref={dataEditorRef}
           getCellContent={getCellContent}
@@ -733,18 +733,18 @@ export function DataGrid() {
           <div className="flex items-center justify-between px-3 py-2 min-w-max">
             <div className="flex items-center gap-1">
               {/* + Grid - plain text */}
-              <button className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded whitespace-nowrap">
+              <button className="flex items-center gap-1 px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 rounded whitespace-nowrap cursor-pointer">
                 <Plus size={16} />
                 Grid
               </button>
 
               {/* Active tab - underlined */}
-              <button className="px-2 py-1 text-sm font-medium text-blue-600 border-b-2 border-blue-600 whitespace-nowrap">
+              <button className="px-2 py-1 text-sm font-medium text-blue-600 border-b-2 border-blue-600 whitespace-nowrap cursor-pointer">
                 Bitscale grid only
               </button>
 
               {/* Three dots menu */}
-              <button className="px-1 py-1 text-gray-400 hover:bg-gray-100 rounded shrink-0">
+              <button className="px-1 py-1 text-gray-400 hover:bg-gray-100 rounded shrink-0 cursor-pointer">
                 <MoreVertical size={14} />
               </button>
 
@@ -755,24 +755,24 @@ export function DataGrid() {
               <span className="px-2 py-1 text-sm text-gray-400 whitespace-nowrap">Lead Generation...</span>
 
               {/* Navigation arrows */}
-              <button className="p-1 text-gray-400 hover:bg-gray-100 rounded shrink-0">
+              <button className="p-1 text-gray-400 hover:bg-gray-100 rounded shrink-0 cursor-pointer">
                 <ChevronLeft size={16} />
               </button>
-              <button className="p-1 text-gray-400 hover:bg-gray-100 rounded shrink-0">
+              <button className="p-1 text-gray-400 hover:bg-gray-100 rounded shrink-0 cursor-pointer">
                 <ChevronRight size={16} />
               </button>
             </div>
 
             <div className="flex items-center gap-2 ml-4">
               {/* Kill Run - red text only, no background */}
-              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-red-500 hover:bg-red-50 rounded whitespace-nowrap">
+              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-red-500 hover:bg-red-50 rounded whitespace-nowrap cursor-pointer">
               <DeleteIcon size={14} />
                 Kill Run
               </button>
 
               {/* Auto Run - plain text with blue dot */}
               <div className="relative">
-                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-md hover:bg-gray-100 whitespace-nowrap">
+                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-md hover:bg-gray-100 whitespace-nowrap cursor-pointer">
                   <Hourglass size={14} className="text-gray-500" />
                   Auto Run
                 </button>
@@ -781,7 +781,7 @@ export function DataGrid() {
 
               {/* Auto Dedupe - plain text with blue dot */}
               <div className="relative">
-                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-md hover:bg-gray-100 whitespace-nowrap">
+                <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-md hover:bg-gray-100 whitespace-nowrap cursor-pointer">
                   <FlipVertical2 size={14} className="text-gray-500"/>
                   Auto Dedupe
                 </button>
@@ -789,7 +789,7 @@ export function DataGrid() {
               </div>
 
               {/* Support - plain text */}
-              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-full hover:bg-gray-100 whitespace-nowrap">
+              <button className="flex items-center gap-1.5 px-2 py-1 text-sm text-gray-800 border rounded-full hover:bg-gray-100 whitespace-nowrap cursor-pointer">
                 <Image src="/bitscale-favicon.png" alt="Support" width={13} height={13}/>
                 Support
               </button>
