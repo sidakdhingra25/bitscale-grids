@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic"
 
-const DataGrid = dynamic(() => import("@/components/data-grid").then((mod) => ({ default: mod.DataGrid })), {
+const DataGrid = dynamic(() => import("@/components/data-grid/data-grid").then((mod) => ({ default: mod.DataGrid })), {
   ssr: false,
 })
 
